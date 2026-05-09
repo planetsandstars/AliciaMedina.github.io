@@ -33,16 +33,20 @@
 
 /*-------------------------------------------------------------------------*/
 
-body, html {
-  height: 100%;
-}
+.hero_blueimg {
+  min-height: 50vh;
 
-.bg_blueimg {
   background-image: url("./images/blue_white_checkered.png");
-
-  height: 50%;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "brush";
+  color: var(--limeade);
+}
+
+.content_lem {
+  min-height: 50vh;
+  background-color: var(--lemon);
+  font-family:'typer';
+  color: var(--sailorb);
 }
