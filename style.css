@@ -102,7 +102,7 @@ body, h1, p{
 .nav_nav{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 6rem;
     width: fit-content;
     padding: .9% 20%;
     border-radius: 999px;
@@ -122,16 +122,85 @@ body, h1, p{
     transition: opacity 0.3s ease;
 }
 
-.nav-nav a:hover{
+.nav_nav a:hover{
     opacity: 0.65;
 }
 
+.in_line {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 .smaller_bnuy {
   max-width: 10%;
   max-height: 10%;
-
 }
 
+.gif_wrap{
+  position: relative;
+  display: inline-block;
+}
+
+.hover_text{
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  font-family: "brush";
+  color: var(--darkberry);
+}
+
+.gif_wrap:hover .hover_text{
+  opacity: 1;
+}
+
+p.desc {
+  width: 400px;
+  padding-left: 20px;
+  font-family: "typer";
+  color: var(--sailorb);
+  font-weight: bold;
+}
+
+.btn {
+  background-color: var(--sailorb);
+  color: var(--bbb);
+  padding: 5%;
+  text-align: center;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "brush";
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid var(--bbb);
+}
+
+.btn:hover {
+  background-color: var(--bbb);
+  color: var(--sailorb);
+  border: 2px solid var(--sailorb);
+}
+
+.btn_group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.text_section{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 
