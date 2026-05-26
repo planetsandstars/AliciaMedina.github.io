@@ -16,6 +16,14 @@
     font-style: normal;
 }
 
+/*Poppins font*/
+@font-face {
+    font-family: "Poppins";
+    src: url(./Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*------------------fonts----------------------------*/
 
 /*color palette----------------------------------------------------------*/
@@ -56,7 +64,7 @@ body, h1, p{
 .content_lem {
   min-height: 80vh;
   background-color: var(--lemon);
-  font-family:'typer';
+  font-family:'poppins', sans-serif;
   color: var(--sailorb);
 }
 
@@ -71,6 +79,8 @@ body, h1, p{
   color: var(--limeade);
   text-align: center;
   background-color: var(--sailorb);
+  padding: 7px;
+  border-radius: 10px;
 
   display: inline-block;
 
@@ -80,23 +90,6 @@ body, h1, p{
 
 .under_hero {
   padding-top: 10px;
-}
-
-.button_bbg {
-  background-color: var(--bubblegum);
-  border: var(--darkberry);
-  color: var(--darkberry);
-  padding: 2%;
-  text-align: center;
-
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  font-family: "brush";
-  font-weight: bold;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
 }
 
 .nav_nav{
@@ -128,8 +121,21 @@ body, h1, p{
 
 .in_line {
     display: flex;
+    align-items: flex-start;
     justify-content: center;
-    width: 100%;
+    gap: 40px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 500px;
 }
 
 .smaller_bnuy {
@@ -160,11 +166,9 @@ body, h1, p{
 }
 
 p.desc {
-  width: 400px;
-  padding-left: 20px;
-  font-family: "typer";
-  color: var(--sailorb);
-  font-weight: bold;
+  max-width: 400px;
+  width: 100%;
+  padding-left: 0;
 }
 
 .btn {
@@ -187,10 +191,22 @@ p.desc {
   border: 2px solid var(--bbb);
 }
 
+.btn_blue:hover {
+  background-color: var(--bbb);
+  color: var(--sailorb);
+  border: 2px solid var(--sailorb);
+}
+
 .btn_red {
   background-color: var(--bubblegum);
   color: var(--darkberry);
   border: 2px solid var(--darkberry);
+}
+
+.btn_red:hover {
+  background-color: var(--darkberry);
+  color: var(--bubblegum);
+  border: 2px solid var(--bubblegum);
 }
 
 .btn_green {
@@ -199,34 +215,45 @@ p.desc {
   border: 2px solid var(--limeade);
 }
 
-.btn:hover {
-  background-color: var(--bbb);
-  color: var(--sailorb);
-  border: 2px solid var(--sailorb);
+.btn_green:hover {
+  background-color: var(--limeade);
+  color: var(--forest);
+  border: 2px solid var(--forest);
 }
+
+
+
 
 .btn_group {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
 }
 
-.text_section{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.side_eye {
+    width: 220px;
+    border-radius: 20px;
+    flex-shrink: 0;
 }
+
+
 
 .footer-16371 {
-  padding: 7rem 0;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  
   font-family: "Poppins", sans-serif; }
+
   .footer-16371 .footer-site-logo {
     text-align: center;
     font-size: 2rem;
     font-weight: 900; }
     .footer-16371 .footer-site-logo a {
-      color: #4200ff; }
+      color: var(--carrot);
+    border:#FADD8B solid 2px;
+    padding: 3px;
+    border-radius: 10px}
   .footer-16371 .nav-links {
     padding: 0;
     margin: 0; }
@@ -260,4 +287,7 @@ p.desc {
     color: #999999; }
 
 
-
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
