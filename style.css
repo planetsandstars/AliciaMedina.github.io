@@ -42,12 +42,29 @@
     --forest: #25533F;
     --limeade: #C9D763;
 
+    --bubblegum: #E3B0C8;
+    --darkberry: #6E1E3A;
+    --brookgreen: #AABAAE;
+    --chalk: #E3D6BF;
+    --bbb: #A4BDE0;
+    --olive: #9F9679;
+    --amaranth: #B5728A;
+
+    --white: #ffffff;
+    --grey: #77727c;
+    --black: #000000;
+
 
     /* light theme */
     color-scheme: light;
 
     --background: var(--lemon);
     --text: var(--sailorb);
+    --navbg: var(--bubblegum);
+    --navtext: var(--darkberry);
+    --txtsectbg: var(--white);
+    --footerbg: var(--white);
+
 }
 
 
@@ -55,9 +72,43 @@
 
     color-scheme: dark;
 
-    --background: var(--darkberry);
-    --text: var(--bubblegum);
+    --background: var(--amaranth);
+    --text: var(--black);
+    --navbg: var(--darkberry);
+    --navtext: var(--amaranth);
+    --txtsectbg: var(--bubblegum);
+    --footerbg: var(--bubblegum);
 
+
+}
+
+/*-------------------------------------------------------------------------*/   
+
+/*fun personality mode*/
+
+.personality_elements {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+[data-theme="dark"] .personality_elements {
+    display: none;
+}
+
+/*-------------------------------------------------------------------------*/
+
+/* professional mode */
+.professional_element {
+    display: none;
+}
+
+/* dark mode */
+[data-theme="dark"] .professional_element {
+    display: block !important;
+}
+
+[data-theme="dark"] .personality_elements {
+    display: none !important;
 }
 
 /*-------------------------------------------------------------------------*/
@@ -91,9 +142,9 @@ body, h1, p{
 
 .content_lem {
   min-height: 80vh;
-  background-color: var(--lemon);
+  background-color: var(--background);
   font-family:'poppins', sans-serif;
-  color: var(--sailorb);
+  color: var(--text);
 }
 
 .title_head {
@@ -129,7 +180,7 @@ body, h1, p{
     width: fit-content;
     padding: .9% 20%;
     border-radius: 999px;
-    background: var(--bubblegum);
+    background: var(--navbg);
 }
 
 .nav_nav img{
@@ -140,7 +191,7 @@ body, h1, p{
     text-decoration: none;
     font-family: "brush";
     font-weight: bold;
-    color: var(--darkberry);
+    color: var(--navtext);
     font-size: 20px;
     transition: opacity 0.3s ease;
 }
@@ -164,7 +215,8 @@ body, h1, p{
     max-width: 420px;
     width: 100%;
     padding: 20px;
-    background: white;
+    background: var(--txtsectbg);
+    color: var(--text);
     border-radius: 16px;
 }
 
@@ -286,7 +338,9 @@ p.desc {
   padding-top: 3rem;
   padding-bottom: 1.5rem;
   
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif; 
+
+  background-color: var(--footerbg);}
 
   .footer-16371 .footer-site-logo {
     text-align: center;
@@ -294,7 +348,7 @@ p.desc {
     font-weight: 900; }
     .footer-16371 .footer-site-logo a {
       color: var(--carrot);
-    border:#FADD8B solid 2px;
+    border:#ffffff solid 4px;
     padding: 3px;
     border-radius: 10px}
   .footer-16371 .nav-links {
