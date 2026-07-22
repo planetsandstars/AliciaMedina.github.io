@@ -43,7 +43,7 @@
     --sailorb: #274F8B;
     --forest: #25533F;
     --limeade: #C9D763;
-    
+
     --brookgreen: #AABAAE;
     --chalk: #E3D6BF;
     --bbb: #A4BDE0;
@@ -51,7 +51,7 @@
     --amaranth: #B5728A;
 
     --white: #ffffff;
-    --grey: #77727c;
+    --grey: #989899;
     --black: #000000;
 
 
@@ -60,8 +60,8 @@
 
     --background: var(--lemon);
     --text: var(--sailorb);
-    --navbg: var(--bubblegum);
-    --navtext: var(--darkberry);
+    --navbg: var(--carrot);
+    --navtext: var(--lemon);
     --txtsectbg: var(--white);
     --footerbg: var(--white);
 
@@ -74,8 +74,8 @@
 
     --background: var(--amaranth);
     --text: var(--black);
-    --navbg: var(--darkberry);
-    --navtext: var(--amaranth);
+    --navbg: var(--carrot);
+    --navtext: var(--darkberry);
     --txtsectbg: var(--bubblegum);
     --footerbg: var(--bubblegum);
 
@@ -556,3 +556,52 @@
         justify-content: center;
     }
 }
+
+.footer-16371 {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  
+  font-family: "Poppins", sans-serif; 
+
+  background-color: var(--footerbg);}
+
+  .footer-16371 .footer-site-logo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900; }
+    .footer-16371 .footer-site-logo a {
+      color: var(--carrot);
+    border:#ffffff solid 4px;
+    padding: 3px;
+    border-radius: 10px}
+  .footer-16371 .nav-links {
+    padding: 0;
+    margin: 0; }
+    .footer-16371 .nav-links li {
+      display: inline-block; }
+      .footer-16371 .nav-links li a {
+        padding: 10px;
+        color: #000; }
+        .footer-16371 .nav-links li a:hover {
+          color: #4200ff; }
+  .footer-16371 .social h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000; }
+  .footer-16371 .social ul li {
+    display: inline-block; }
+    .footer-16371 .social ul li a {
+      display: inline-block;
+      padding: 10px; }
+    .footer-16371 .social ul li.in a {
+      color: #df588a; }
+    .footer-16371 .social ul li.tw a {
+      color: #15b8ff; }
+    .footer-16371 .social ul li.fb a {
+      color: #3742d0; }
+    .footer-16371 .social ul li.dr a {
+      color: #fa38c1; }
+    .footer-16371 .social ul li.pin a {
+      color: #dd4d5a; }
+  .footer-16371 .copyright {
+    color: #999999; }
