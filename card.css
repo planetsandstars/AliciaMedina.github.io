@@ -310,18 +310,12 @@
     }
   }
 
-  .-line-clamp {
-    --_limit: var(--line-clamp--limit, 3);
-
+  .line-clamp {
     display: -webkit-box;
-    overflow-block: clip;
-    -webkit-box-orient: block-axis;
-    -webkit-line-clamp: var(--_limit);
-
-    @supports not (overflow-block: clip) {
-      overflow-y: clip;
-    }
-  }
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
 }
 
 @layer base {
