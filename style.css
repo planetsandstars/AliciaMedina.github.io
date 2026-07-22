@@ -450,11 +450,23 @@ p.desc {
 
     .main {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .aside {
-        display: none; /* or stack them */
+        display: none;
     }
+}
+
+@media (max-width: 1000px) {
+
+    .nav_nav {
+        gap: 1rem;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 /*------------------------------*/
