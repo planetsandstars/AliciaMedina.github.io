@@ -2,6 +2,88 @@
 
 @import "https://cdn.jsdelivr.net/npm/kiso.css@latest/kiso.css" layer(reset);
 
+    /*importing fonts----------------------------*/
+
+/*Elbrush font*/
+@font-face {
+    font-family: brush;
+    src: url(./Elbrush.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Shinetypewriter font*/
+@font-face {
+    font-family: typer;
+    src: url(./ShineTypewriter.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Poppins font*/
+@font-face {
+    font-family: "Poppins";
+    src: url(./Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*------------------fonts----------------------------*/
+
+    /* color palette ----------------------------------------------------------*/
+
+:root {
+
+    /* palette */
+    --bubblegum: #E3B0C8;
+    --darkberry: #6E1E3A;
+    --carrot: #D76A4C;
+    --lemon: #FADD8B;
+    --bbb: #A4BDE0;
+    --sailorb: #274F8B;
+    --forest: #25533F;
+    --limeade: #C9D763;
+    
+    --brookgreen: #AABAAE;
+    --chalk: #E3D6BF;
+    --bbb: #A4BDE0;
+    --olive: #9F9679;
+    --amaranth: #B5728A;
+
+    --white: #ffffff;
+    --grey: #77727c;
+    --black: #000000;
+
+
+    /* light theme */
+    color-scheme: light;
+
+    --background: var(--lemon);
+    --text: var(--sailorb);
+    --navbg: var(--bubblegum);
+    --navtext: var(--darkberry);
+    --txtsectbg: var(--white);
+    --footerbg: var(--white);
+
+}
+
+
+[data-theme="dark"] {
+
+    color-scheme: dark;
+
+    --background: var(--amaranth);
+    --text: var(--black);
+    --navbg: var(--darkberry);
+    --navtext: var(--amaranth);
+    --txtsectbg: var(--bubblegum);
+    --footerbg: var(--bubblegum);
+
+
+}
+
+/*-------------------------------------------------------------------------*/
+
 @layer features {
   @scope (.scope.product-cards) to (.scope) {
     :scope {
@@ -433,4 +515,44 @@
   syntax: "<url>";
   inherits: false;
   initial-value: url('data:image/svg+xml,<svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path fill="red" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" /></svg>');
+}
+
+.purchase-button::before {
+    display: none;
+}
+
+.nav_nav {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    width: fit-content;
+    padding: .9% 20%;
+    border-radius: 999px;
+    background: var(--navbg);
+}
+
+.nav_nav img {
+    align-items: start;
+}
+
+.nav_nav a {
+    text-decoration: none;
+    font-family: "brush";
+    font-weight: bold;
+    color: var(--navtext);
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.nav_nav a:hover {
+    opacity: 0.65;
+}
+
+@media (max-width: 1000px) {
+    .nav_nav {
+        gap: 1rem;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
