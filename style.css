@@ -560,3 +560,19 @@ p.desc {
 }
 
 /*-------------------------------*/
+
+.theme_toggle {
+    flex-shrink: 0;
+}
+
+/* hide mobile nav switch by default (desktop) */
+.nav_nav .theme_toggle {
+    display: none;
+}
+
+/* show only on mobile */
+@media (max-width: 768px) {
+    .nav_nav .theme_toggle {
+        display: flex;
+    }
+}
