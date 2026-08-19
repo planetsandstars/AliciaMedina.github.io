@@ -24,6 +24,14 @@
     font-style: normal;
 }
 
+/*Organo font*/
+@font-face {
+    font-family: "Organo";
+    src: url(./Organo.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*------------------fonts----------------------------*/
 
 
@@ -138,6 +146,13 @@ body, h1, p{
   padding: 0;
 }
 
+[data-theme="dark"] .hero_blueimg {
+  background-image: none;
+}
+
+.hero_blueimg h1 {
+    text-align: center;
+}
 
 
 .content_lem {
@@ -151,6 +166,36 @@ body, h1, p{
   width: 410px;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem; 
+}
+
+.professional_name {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #D76A4C !important;
+    text-align: center;
+
+    border: #ffffff solid 4px;
+    background-color: var(--bubblegum);
+    padding: 3px;
+    border-radius: 10px;
+
+    margin: 2rem auto 0;
+}
+
+.personality_name {
+    font: "FetteMikado.ttf";
+    font-size: 3rem;
+    font-weight: 900;
+    color: (var(--limeade)) !important;
+    text-align: center;
+
+    border: #ffffff solid 4px;
+    background-color: var(--bubblegum);
+    padding: 3px;
+    border-radius: 10px;
+
+    margin: 2rem auto 0;
 }
 
 .bg_g {
